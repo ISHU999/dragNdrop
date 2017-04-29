@@ -1,0 +1,13 @@
+#container{
+    display: flex;
+}
+#sub1,#sub2{
+    width:400px;
+    height:600px;
+    border: 1px solid;
+}
+.supervisees{
+    width:100px;
+    height:100px;
+    border:1px solid blue;
+}
