@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Intro</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="scripts/global.js"></script>
+
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.4.4.js"></script>
+
+    <script type="text/javascript">
+        // var loginData = { attribute: { userName: "asark5", password: "qwerty" } };
+
+        // db.login(loginData, function (data) {
+        //     console.log(data);
+        // });  
+        db.accessData('getDataByAttribute', "login", { attribute: { id: 100019 } }, function (data) {console.log(data)
+          db.logout(function(data){console.log(data)
+        db.accessData('getDataByAttribute','login',{ attribute: { id: 100019 }},function(data){
+            console.log(data);
+        },function(err){
+            console.log(err)
+        })  
+        },function(err){console.log(err)});
+        },
+        function (err) {console.log(err)}
+        );
+
+       
+        // var dataO = {
+        //     userName: 'asark5',
+        //     password: 'qwerty',
+        //     id: 100099,
+        //     sessionId: ''
+        // };
+        // db.accessData('getData', "supervisor", {}, function (data) {
+        //     // console.log(data);
+        // }, function (err) {
+        //     console.log(err)
+        // })
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
